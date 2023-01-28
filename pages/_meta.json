@@ -1,15 +1,21 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "hidden": true
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "page"
+  },
+  "notes": {
+    "title": "Notes",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "adrianfinantyo.com",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://adrianfinantyo.com",
     "newWindow": true
   }
 }

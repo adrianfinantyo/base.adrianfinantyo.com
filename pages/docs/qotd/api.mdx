@@ -1,0 +1,48 @@
+# 🔥QotD API
+
+[baseurl]: https://af-qotd/api/
+
+QotD API is a simple API that returns a random quote from a list of quotes. The API is free to use for any non commercial purpose.
+
+## Basic Usage
+
+### Base URL
+
+[https://af-qotd.vercel.app/api](https://af-qotd.vercel.app/api)
+
+### Get All Quotes
+
+```js filename="Endpoint to get all quotes from quote list"
+GET /quotes/
+```
+
+```json filename="Expected output"
+{
+  "status": "success",
+  "content": {
+    "quotes": [...] // Array of quotes
+  }
+}
+```
+
+### Get Random Quote
+
+```js filename="Endpoint to get a random quote"
+GET /quotes/random/
+```
+
+```json filename="Expected output"
+{
+  "status": "success",
+  "data": ...
+}
+```
+
+## Example
+
+```js filename="Example of using the API with Axios" copy
+const getRandomQuote = async () => {
+  const response = await axios.get("https://af-qotd.vercel.app/api/quotes/random/");
+  return response.data;
+};
+```
