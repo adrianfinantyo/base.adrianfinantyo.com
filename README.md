@@ -1,23 +1,19 @@
-# Nextra Docs Template 
+# 📖KC (Knowledge Center)
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+KC stands for Knowledge Center is my knowledge base that is a a collection of my personal notes and references that I use for my daily work. I have been using this for a while and I think it's time to share it with the community. I hope this can be useful others that have same interest. Most of it may be opinionated and not work for everyone, but feel free to explore and use the content here as your reference if you find it useful.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+[![](.github/screenshot.png)](https://af-qotd.vercel.app)
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+## 📚Table of Contents
 
-## Quick Start
+- [Docs](/docs)
+- [Notes](/notes)
 
-Click the button to clone this repository and deploy it on Vercel:
+## 📝License
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE.md) file for details
 
-## Local Development
+## 🙏Acknowledgments
 
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+- Inspired by [sozonome/my-base](https://github.com/sozonome/my-base)
+- [Knowledge icons created by pojok d - Flaticon](https://www.flaticon.com/free-icons/knowledge)
