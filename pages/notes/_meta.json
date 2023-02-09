@@ -1,1 +1,7 @@
-
+{
+  "index": "Index",
+  "web": "Web Dev",
+  "mobile": "Mobile Dev",
+  "app": "Application",
+  "aslab": "Laboratory Assistant"
+}

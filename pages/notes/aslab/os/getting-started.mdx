@@ -1,0 +1,92 @@
+# Getting Started
+
+In this tutorial, we will learn how to install and use [Ubuntu](https://ubuntu.com/) with basic terminal commands and also set up the GCC compiler for a future course.
+
+## Install Ubuntu
+
+### Option 1 : Install Ubuntu on a Virtual Machine
+
+- [Ubuntu](https://ubuntu.com/download/desktop) (v20.0.0 or higher)
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (v6.0.0 or higher)
+
+### Option 2 : Install Ubuntu using WSL
+
+- [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL)
+
+## Setup GCC compiler
+
+### Option 1 : Install GCC compiler using Ubuntu package manager
+
+```bash copy
+sudo apt-get update
+```
+
+```bash copy
+sudo apt-get install build-essential
+```
+
+```bash copy
+gcc --version
+```
+
+### Option 2 : Install GCC compiler using Homebrew
+
+`note` : This option requires you to install [Homebrew](https://brew.sh/) first.
+
+```bash copy
+brew install gcc
+```
+
+```bash copy
+gcc --version
+```
+
+## Test GCC compiler
+
+Create a C file named `hello.c`
+
+```bash copy
+touch hello.c
+```
+
+Open `hello.c` using nano (Ubuntu's built in text editor) or your favorite text editor
+
+```bash copy
+nano hello.c
+```
+
+Add the following code to `hello.c`
+
+```c copy
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!");
+    return 0;
+}
+```
+
+Compile C file using GCC compiler with the following command:
+
+```bash copy
+gcc -o hello hello.c
+```
+
+Run the compiled file:
+
+```bash copy
+./hello
+```
+
+## Next Steps
+
+- [Introduction to Ubuntu]()
+
+## References
+
+- [Ubuntu](https://ubuntu.com/)
+- [VirtualBox](https://www.virtualbox.org/)
+- [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- [GCC](https://gcc.gnu.org/)
+- [Homebrew](https://brew.sh/)
+- [GeeksForGeeks: How to Install GCC Compiler on Linux?](https://www.geeksforgeeks.org/how-to-install-gcc-compiler-on-linux/)

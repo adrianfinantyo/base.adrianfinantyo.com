@@ -1,0 +1,50 @@
+.runningUnderline {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+.runningUnderline:hover {
+  color: rgb(36, 102, 255);
+}
+
+.runningUnderline::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  background-color: rgb(36, 102, 255);
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.runningUnderline:hover::after {
+  visibility: visible;
+}
+
+.fromStart::after {
+  left: 0;
+  width: 0%;
+}
+
+.fromStart:hover::after {
+  width: 100%;
+}
+
+.fromEnd::after {
+  right: 0;
+  width: 0%;
+}
+
+.fromEnd:hover::after {
+  width: 100%;
+}
+
+.fromCenter::after {
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+}
+
+.fromCenter:hover::after {
+  transform: scaleX(1);
+}
